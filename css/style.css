@@ -1,3 +1,10 @@
+:root {
+    --heading: color #212121;
+    --paragraph: #757575;
+    --bakcground: #2F303A;
+}
+
+
 body {
     width: 1600px;
     font-family: 'Roboto', sans-serif;
@@ -14,6 +21,11 @@ li {
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+[type^="button"] {
+    cursor: pointer;
 }
 
 header {
@@ -24,12 +36,12 @@ header {
 }
 
 .navigation-link {
-   color: #212121; 
+   color: var(--heading); 
 } 
 
 .telefon-in-nav, 
 .mail-in-nav {
-    color: #757575;
+    color: var(--paragraph);
 }
 
 .logo {
@@ -60,8 +72,9 @@ header {
     line-height: 16px;
 }
 
-.cursor:hover {
-   color: #2196F3; 
+.cursor:hover,
+.cursor:focus {
+    color: #2196F3;
 }
 
 .contacts {
@@ -80,7 +93,7 @@ header {
 /* info */
 
 .solution-and-button {
-    background-color: #2F303A;
+    background-color: var(--bakcground);
     width: 1600px;
     height: 600px;
     text-align: center;
@@ -135,7 +148,7 @@ header {
 }
 
 .benefit-name {
-    color: #212121;
+    color: var(--heading);
     width: 270px;
     height: 16px;
     font-style: normal;
@@ -146,7 +159,7 @@ header {
 }
 
 .benefit-description {
-    color: #757575;
+    color: var(--paragraph);
     width: 270px;
     height: 75px;
     left: 515px;
@@ -164,7 +177,7 @@ header {
 }
 
 .we-doing {
-    color: #212121;
+    color: var(--heading);
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -188,7 +201,7 @@ header {
 }
 
 .our-team {
-    color: #212121;
+    color: var(--heading);
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -213,7 +226,7 @@ header {
 
 .name-team-card {
     text-align: center;
-    color: #212121;
+    color: var(--heading);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -222,7 +235,7 @@ header {
 
 .profession {
     text-align: center;
-    color: #757575;
+    color: var(--paragraph);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -240,7 +253,7 @@ header {
     width: 1170;
     height: 1360;
     margin-top: 94px;
-    margin-left: 215px;
+    margin-left: 175px;
     margin-right: 215px;
     margin-bottom: 94px;
 }
@@ -254,7 +267,7 @@ header {
 }
 
 .button-in-portfolio {
-    color: #212121;
+    color: var(--heading);
     text-align: center;
     font-style: normal;
     font-style: normal;
@@ -289,7 +302,8 @@ header {
 }
 
 
-.button-in-portfolio:hover {
+.button-in-portfolio:hover,
+.button-in-portfolio:focus {
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: #FFFFFF;
@@ -300,7 +314,8 @@ header {
     width: 370px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
-    margin: 0px 30px 30px 30px;
+    cursor: pointer;
+    margin: 0px 30px 0px 0px;
 }
 
 .portfolio-project {
@@ -318,12 +333,15 @@ header {
     font-size: 16px;
     line-height: 30px;
     padding-left: 24px;
-    color: #757575;
+    color: var(--paragraph);
 }
 
 .photo-list-in-portfolio {
-    column-count: 3;
-    column-gap: 60px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    height: 1170px;
+    width: 1360px;
 }
 
 
@@ -331,7 +349,7 @@ header {
 /* footer */
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--bakcground);
     height: 192px;
     padding-top: 60px;
 }
@@ -364,7 +382,7 @@ header {
 
 .footer-contats-mail,
 .footer-contats {
-    color: #757575;
+    color: var(--paragraph);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
