@@ -300,7 +300,7 @@ header {
     width: 370px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
-    margin: 30px;
+    margin: 0px 30px 30px 30px;
 }
 
 .portfolio-project {
@@ -322,7 +322,11 @@ header {
 }
 
 .photo-list-in-portfolio {
+    column-count: 3;
+    column-gap: 60px;
 }
+
+
 
 /* footer */
 
