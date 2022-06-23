@@ -1,8 +1,11 @@
 body {
     width: 1600px;
-    height: 2349px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.48px;
+}
+
+.index {
+    height: 2349px;
 }
 
 li {
@@ -20,10 +23,13 @@ header {
     align-items: center;
 }
 
-.navigation-link, 
+.navigation-link {
+   color: #212121; 
+} 
+
 .telefon-in-nav, 
 .mail-in-nav {
-    color: #212121;
+    color: #757575;
 }
 
 .logo {
@@ -225,6 +231,100 @@ header {
 }
 
 /* portfolio */
+
+.portfolio {
+    height: 1880px;
+}
+
+.list-in-portfolio {
+    width: 1170;
+    height: 1360;
+    margin-top: 94px;
+    margin-left: 215px;
+    margin-right: 215px;
+    margin-bottom: 94px;
+}
+
+.buttons-in-portfolio {
+    display: flex;
+    padding-left: 271px;
+    padding-right: 271px;
+    width: 611px;
+    height: 54px;
+}
+
+.button-in-portfolio {
+    color: #212121;
+    text-align: center;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    margin-left: 8px;
+    height: 38px;
+}
+
+.all {
+    width: 73px;
+}
+
+.web-sites {
+    width: 128px;
+}
+
+.applications {
+    width: 145px;
+}
+
+.design {
+    width: 103px;
+}
+
+.marketing {
+    width: 130px;  
+}
+
+
+.button-in-portfolio:hover {
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: #FFFFFF;
+} 
+
+.image-and-name-in-portfolio {
+    height: 404px;
+    width: 370px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    margin: 30px;
+}
+
+.portfolio-project {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.96px;
+    padding-left: 24px;
+    color: #212121;
+}
+
+.name-portfolio-project {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 24px;
+    color: #757575;
+}
+
+.photo-list-in-portfolio {
+}
+
+/* footer */
 
 .footer {
     background-color: #2F303A;
