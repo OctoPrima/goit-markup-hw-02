@@ -1,5 +1,5 @@
 :root {
-    --heading: color #212121;
+    --heading: #212121;
     --paragraph: #757575;
     --bakcground: #2F303A;
     --link-and-logo: #2196F3;
@@ -310,7 +310,7 @@ header {
     line-height: 1.5;
     letter-spacing: 0.06em;
     padding-left: 24px;
-    color: #212121;
+    color: var(--heading);
 }
 
 .name-portfolio-project {
